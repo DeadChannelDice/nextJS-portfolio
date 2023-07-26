@@ -20,10 +20,14 @@ export default function Home() {
         <Layout className='pt-0'>
         <div className="flex justify-between w-full items-center">
           <div className='w-1/2'>
-            <Image src={ profilePic } alt="Mike Charpin" className='w-full h-auto' />
+            <Image src={ profilePic } alt="Mike Charpin" 
+              className='w-full h-auto' 
+              priority={true}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+             />
           </div>
           <div className='w-1/2 flex flex-col items-center self-center'>
-            <AnimatedText text="Turning Vision Into Reality With Code And Design." classname='!text-left text-6xl'/>
+            <AnimatedText text="Turning Vision Into Reality With Code And Design." classname='!text-left !text-6xl'/>
             <p className='my-4 text-base font-medium'>
               As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
               Explore my latest projects and articles, showcasing my expertise in React.js and web development.

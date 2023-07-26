@@ -58,7 +58,10 @@ const FeaturedArticle = ({title, summary, readTime, img, link}) => {
 
             <Link href={link} target='_blank' className='w-full cursor-pointer inline-block overflow-hidden rounded-lg '>
 
-                <Image src={img} alt={title} className='w-full h-auto rounded-lg hover:scale-105 ease-in duration-300 mb-1'/>
+                <Image src={img} alt={title} className='w-full h-auto rounded-lg hover:scale-105 ease-in duration-300 mb-1'
+                priority={true}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                />
 
             </Link>
 

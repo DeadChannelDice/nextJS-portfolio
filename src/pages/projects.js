@@ -14,7 +14,11 @@ const FeaturedProject =( {type, title, summary, img, link, github} ) => {
         <article className='w-full flex items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl p-12 relative'>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl' />
             <Link href={link} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded-lg'>
-                <Image src={img} alt={title} className='w-full h-auto'/>
+                <Image src={img} alt={title} 
+                    className='w-full h-auto'
+                    priority={true}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                />
             </Link>
             <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
                 <span className='text-primary font-medium text-xl'>{type}</span>
