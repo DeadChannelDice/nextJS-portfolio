@@ -15,7 +15,7 @@ const Details = ({type, time, place, info}) => {
             transition={{duration: 1, type:"spring"}}
             >
                 <h3 className='capitalize font-bold font-2xl' >{type}</h3>
-                <span className='capitaize font-medium text-dark/75'>
+                <span className='capitaize font-medium text-dark/75 dark:text-light/50'>
                     {time} | {place}
                 </span>
 
@@ -38,16 +38,20 @@ const Education = () => {
     )
 
   return (
-    <div className='my-64'>
+    <div className='my-32'>
         <h2 className="font-bold text-8xl mb-32 w-full text-center">
             Education
         </h2>
 
         <div ref={ref} className='w-[75%] mx-auto relative'>
 
+        <motion.div 
+                style={{scaleY: scrollYProgress}}
+                className='absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-primaryDark origin-top '
+            />
             <motion.div 
                 style={{scaleY: scrollYProgress}}
-                className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top '
+                className='absolute left-9 top-2 w-[4px] h-full bg-transparent dark:bg-primaryDark blur dark:opacity-50 origin-top '
             />
 
             <ul className='w-full flex flex-col items-start justify-between ml-4'>
@@ -66,9 +70,6 @@ const Education = () => {
                     info={"HTML, CSS & Javascript Fundamentals"}
                />
 
-                
-
-                
             </ul>
         </div>
     </div>

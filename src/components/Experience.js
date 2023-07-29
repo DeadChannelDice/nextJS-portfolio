@@ -14,8 +14,8 @@ const Details = ({position, company, companyLink, time, address, work}) => {
             whileInView={{y:0}}
             transition={{duration: 1, type:"spring"}}
             >
-                <h3 className='capitalize font-bold font-2xl' >{position}&nbsp; <a href={companyLink} target='_blank' className='text-primary capitalize'>@&nbsp;{company}</a></h3>
-                <span className='capitaize font-medium text-dark/75'>
+                <h3 className='capitalize font-bold font-2xl' >{position}&nbsp; <a href={companyLink} target='_blank' className='text-primary dark:text-primaryDark capitalize'>@&nbsp;{company}</a></h3>
+                <span className='capitaize font-medium text-dark/75 dark:text-light/50'>
                     {time} | {address}
                 </span>
 
@@ -47,7 +47,11 @@ const Experience = () => {
 
             <motion.div 
                 style={{scaleY: scrollYProgress}}
-                className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top '
+                className='absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-primaryDark origin-top '
+            />
+            <motion.div 
+                style={{scaleY: scrollYProgress}}
+                className='absolute left-9 top-2 w-[4px] h-full bg-transparent dark:bg-primaryDark blur dark:opacity-50 origin-top rounded-3xl '
             />
 
             <ul className='w-full flex flex-col items-start justify-between ml-4'>
@@ -92,7 +96,7 @@ const Experience = () => {
                     company={"Gentex"}
                     companyLink={"https://www.GentexCorp.com"}
                     time={"2013-2015"}
-                    address={"MBoston, MA"}
+                    address={"Boston, MA"}
                     work={"Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."}
                />
 
