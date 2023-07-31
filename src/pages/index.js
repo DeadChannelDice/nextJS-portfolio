@@ -8,7 +8,6 @@ import { LinkArrow } from '@/components/Icons'
 import HireMe from '@/components/HireMe'
 import TransitionEffect from '@/components/TransitionEffect'
 import AboutMe from '@/components/About'
-import Skills from '@/components/Skills'
 import Education from '@/components/Education'
 import Experience from '@/components/Experience'
 

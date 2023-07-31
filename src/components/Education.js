@@ -10,8 +10,8 @@ const Details = ({type, time, place, info}) => {
         <li ref={ref}
             className='
             my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-start justify-between
-            border-4 border-transparent py-10 px-16 rounded-xl
-            dark:border-4 darK:border-solid dark:border-primaryDark/75 xs:w-full sm:w-full'>
+            border-4 border-dark/60 py-10 px-16 rounded-xl
+            dark:border-4 dark:border-solid dark:border-primaryDark/75 xs:w-full sm:w-full'>
             {/* <LiIcon reference={ref}/> */}
             <motion.div
             initial={{y:50}}
@@ -40,12 +40,12 @@ const Education = () => {
     )
 
   return (
-    <div className='my-32'>
-        <h2 className="font-bold text-8xl mb-32 w-full text-center  sm:text-6xl xs:text-4xl ">
+    <div className='my-32 '>
+        <h2 className="font-bold text-8xl mb-16 w-full text-center  sm:text-6xl xs:text-4xl ">
             Education
         </h2>
 
-        <div ref={ref} className='w-[75%] mx-auto relative xs:w-full sm:w-full md:w-full'>
+        <div ref={ref} className='w-[75%]  mx-auto relative xs:w-full sm:w-full md:w-full lg:w-full'>
 
             {/* <motion.div 
                 style={{scaleY: scrollYProgress}}
@@ -56,7 +56,7 @@ const Education = () => {
                 className='absolute left-9 top-2 w-[4px] h-full bg-transparent dark:bg-primaryDark blur dark:opacity-50 origin-top '
             /> */}
 
-            <ul className='w-full flex flex-col  justify-between items-start ml-4'>
+            <ul className='w-full flex flex-col  justify-center items-center '>
 
                <Details
                     type={"Bachelor's of Science in Industrial Design"}
