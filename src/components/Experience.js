@@ -6,7 +6,7 @@ import LiIcon from './LiIcon'
 const Details = ({position, company, companyLink, time, address, work}) => {
     const ref = useRef(null)
     return (
-        <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between'>
+        <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between xs:w-[70%]'>
 
             <LiIcon reference={ref}/>
             <motion.div 
@@ -14,8 +14,9 @@ const Details = ({position, company, companyLink, time, address, work}) => {
             whileInView={{y:0}}
             transition={{duration: 1, type:"spring"}}
             >
-                <h3 className='capitalize font-bold font-2xl' >{position}&nbsp; <a href={companyLink} target='_blank' className='text-primary capitalize'>@&nbsp;{company}</a></h3>
-                <span className='capitaize font-medium text-dark/75'>
+                <h3 className='capitalize font-bold font-2xl' >{position}&nbsp; </h3>
+                <h3><a href={companyLink} target='_blank' className='text-primary dark:text-primaryDark capitalize '>@&nbsp;{company}</a></h3>
+                <span className='capitaize font-medium text-dark/75 dark:text-light/50'>
                     {time} | {address}
                 </span>
 
@@ -39,15 +40,19 @@ const Experience = () => {
 
   return (
     <div className='my-64'>
-        <h2 className="font-bold text-8xl mb-32 w-full text-center">
+        <h2 className="font-bold text-8xl mb-16 w-full text-center  sm:text-6xl xs:text-4xl">
             Experience
         </h2>
 
-        <div ref={ref} className='w-[75%] mx-auto relative'>
+        <div ref={ref} className='w-[75%] mx-auto relative xs:w-full'>
 
             <motion.div 
                 style={{scaleY: scrollYProgress}}
-                className='absolute left-9 top-0 w-[4px] h-full bg-dark origin-top '
+                className='absolute left-9 top-0 w-[4px] h-full bg-dark dark:bg-primaryDark origin-top '
+            />
+            <motion.div 
+                style={{scaleY: scrollYProgress}}
+                className='absolute left-9 top-2 w-[4px] h-full bg-transparent dark:bg-primaryDark blur dark:opacity-50 origin-top rounded-3xl '
             />
 
             <ul className='w-full flex flex-col items-start justify-between ml-4'>
@@ -92,7 +97,7 @@ const Experience = () => {
                     company={"Gentex"}
                     companyLink={"https://www.GentexCorp.com"}
                     time={"2013-2015"}
-                    address={"MBoston, MA"}
+                    address={"Boston, MA"}
                     work={"Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."}
                />
 
