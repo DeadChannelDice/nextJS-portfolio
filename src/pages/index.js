@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import Image from 'next/image'
-import profilePic from "../../public/images/profile/developer-pic-1.png"
+import profilePic from "../../public/images/profile/charpin-profile-2023-2.jpg"
 import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import { LinkArrow } from '@/components/Icons'
@@ -26,7 +26,7 @@ export default function Home() {
           <div className="flex justify-between w-full items-center lg:flex-col mb-64 mt-24 ">
             <div className='w-1/2 md:w-full lg:w-full'>
               <Image src={ profilePic } alt="Mike Charpin" 
-                className='w-full h-auto  ' 
+                className='w-full h-auto p-8' 
                 priority={true}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />

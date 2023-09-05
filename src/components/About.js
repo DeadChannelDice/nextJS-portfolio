@@ -1,7 +1,7 @@
 import AnimatedText from '@/components/AnimatedText'
 import Image from 'next/image'
 import React, { useEffect, useRef } from 'react'
-import profilePic from "../../public/images/profile/developer-pic-2.jpg"
+import profilePic from "../../public/images/profile/charpin-profile-2023.jpg"
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 
 
@@ -84,16 +84,16 @@ const AnimatedNumbers = ({value}) => {
                             className='
                             text-xl font-medium capitalize text-dark/75 text-right dark:text-light
                             xl:text-center md:text-lg sm:text-base xs:text-sm
-                            '>satisfied clients</h2>
+                            '>projects completed</h2>
                         </div>
                         <div className='flex flex-col items-end justify-center xl:items-center'>
                             <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
-                                <AnimatedNumbers value={40}/>+
+                                <AnimatedNumbers value={10}/>+
                             </span>
                             <h2 className='
                             text-xl font-medium capitalize text-dark/75 text-right dark:text-light 
                             xl:text-center md:text-lg sm:text-base xs:text-sm
-                            '>projects completed</h2>
+                            '>design awards</h2>
                         </div>
                         <div className='flex flex-col items-end justify-center xl:items-center'>
                             <span 
@@ -101,7 +101,7 @@ const AnimatedNumbers = ({value}) => {
                             inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl
                             
                             '>
-                                <AnimatedNumbers value={4}/>+
+                                <AnimatedNumbers value={10}/>+
                             </span>
                             <h2 
                             className='
