@@ -41,19 +41,18 @@ const AnimatedNumbers = ({value}) => {
         
         <div className='flex w-full flex-col items-center justify-center dark:text-light'>
             <div className='pt-16'>
-                <AnimatedText text="Passion Fuels Purpose!" classname='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8'/>
+                <AnimatedText text="Design Wizard, Code Sorcerer" classname='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8'/>
                 <div className='grid w-full grid-cols-8 gap-16 sm:gap-8'>
                     <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8'>
                         <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light'>About</h2>
                         <p className='font-medium'>
-                        Hi, I'm CodeBucks, a web developer and UI/UX designer with a passion for creating beautiful, functional, and user-centered digital experiences. With 4 years of experience in the field. I am always looking for new and innovative ways to bring my clients' visions to life.
+                        I&apos;m Mike, an experienced Industrial Designer transitioning into web development. With a strong background in usability-focused design, I&apos;ve crafted a diverse range of products, from fitness machines to tabletop RPG accessories. 
                         </p>
                         <p className='my-4 font-medium'>
-                        I believe that design is about more than just making things look pretty – it's about solving problems and creating intuitive, enjoyable experiences for users. 
+                        My passion lies in seeing ideas come to life, refining them through prototypes and user feedback, and ultimately making a positive impact on people&apos;s lives. I&apos;m known for my resourcefulness, tackling challenges head-on, and knowing when to seek expertise. I approach problem-solving with research, rapid prototyping, and a commitment to user-centered solutions.
                         </p>
                         <p className='font-medium'>
-                        Whether I'm working on a website, mobile app, or 
-                        other digital product, I bring my commitment to design excellence and user-centered thinking to every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.
+                        I aim to be a creative problem solver who delivers results while fostering a collaborative and enjoyable working environment. Whether I&apos;m working on a website, mobile app, or physical product, I bring my commitment to design excellence and user-centered thinking to every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.
                         </p>
                     </div>
                     
