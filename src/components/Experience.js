@@ -94,7 +94,7 @@ const Experience = () => {
 
                 <Details
                     position={"Draftsman"}
-                    company={"Gentex"}
+                    company={"Gentex Corp."}
                     companyLink={"https://www.GentexCorp.com"}
                     time={"2013-2015"}
                     address={"Boston, MA"}
