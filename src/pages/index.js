@@ -24,9 +24,9 @@ export default function Home() {
       <main className='flex items-center text-dark w-full min-h-screen dark:text-light '>
         <Layout className='pt-0 md:pt-16 sm:pt-8'>
           <div className="flex justify-between w-full items-center lg:flex-col mb-64 mt-24 ">
-            <div className='w-1/2 md:w-full lg:w-full'>
+            <div className='w-1/2 md:w-full lg:w-3/4 '>
               <Image src={ profilePic } alt="Mike Charpin" 
-                className='w-full h-auto p-8' 
+                className='w-full h-auto p-8 ' 
                 priority={true}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
