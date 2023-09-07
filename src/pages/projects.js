@@ -16,17 +16,22 @@ import TC75MobileImage from "../../public/images/projects/TC75MobileImage.jpeg"
 import TC51HolsterImage from "../../public/images/projects/TC51HolsterImage.jpeg"
 import DeadChannelLogoImage from "../../public/images/projects/DeadChannelLogoImage.jpeg"
 import TransitionEffect from '@/components/TransitionEffect'
+import { motion } from 'framer-motion'
+
+const FramerImage = motion(Image)
 
 
 const FeaturedProject =( {type, title, summary, img, link, github} ) => {
     return (
-        <article className='w-full flex items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl p-12 relative'>
+        <article className='w-full flex items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl p-12 relative lg:flex-col'>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl' />
             <Link href={link} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded-lg'>
-                <Image src={img} alt={title} 
+                <FramerImage src={img} alt={title} 
                     className='w-full h-auto'
                     priority={true}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                    whileHover={{scale:1.05}}
+                    transition={{duration:0.3}}
                 />
             </Link>
             <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
@@ -46,13 +51,14 @@ const FeaturedProject =( {type, title, summary, img, link, github} ) => {
 
 const FeaturedIDProject =( {type, title, summary, img, link} ) => {
     return (
-        <article className='w-full flex items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl p-12 relative'>
+        <article className='w-full flex items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl p-12 relative lg:flex-col'>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl' />
             <Link href={link} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded-lg'>
-                <Image src={img} alt={title} 
+                <FramerImage src={img} alt={title} 
                     className='w-full h-auto'
-                    priority={true}
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                    whileHover={{scale:1.05}}
+                    transition={{duration:0.3}}
                 />
             </Link>
             <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
@@ -74,7 +80,10 @@ const MinorProject = ({title, type, img, link, github}) => {
         <article className='w-full flex flex-col items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl p-12 relative'>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl' />
             <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg'>
-                <Image src={img} alt={title} className='w-full h-auto rounded-lg'/>
+                <FramerImage src={img} alt={title} 
+                className='w-full h-auto rounded-lg'
+                whileHover={{scale:1.05}}
+                transition={{duration:0.3}}/>
             </Link>
             <div className='w-full flex flex-col items-start justify-between'>
                 <span className='text-primary font-medium text-xl'>{type}</span>
@@ -99,7 +108,12 @@ const MinorIDProject = ({title, type, img, link}) => {
         <article className='w-full flex flex-col items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl p-12 relative'>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl' />
             <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg'>
-                <Image src={img} alt={title} className='w-full h-auto rounded-lg'/>
+            <FramerImage src={img} alt={title} 
+                    className='w-full h-auto'
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                    whileHover={{scale:1.05}}
+                    transition={{duration:0.3}}
+                />
             </Link>
             <div className='w-full flex flex-col items-start justify-between'>
                 <span className='text-primary font-medium text-xl'>{type}</span>
@@ -134,10 +148,10 @@ const projects = () => {
     <main className='flex w-full flex-col items-center justify-center'>
         <Layout className='pt-16'>
             <AnimatedText text={"Web Development"}
-            classname='mb-16'
+            classname='mb-16 !text-6xl md:!text-5xl sm:!text-3xl'
             />
                 
-                <div className='grid grid-col-12 gap-24 gap-y-32'>
+                <div className='grid grid-col-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
                     <div className='col-span-12'>
                         <FeaturedProject
                         title={"Personal Portfolio Website"}
