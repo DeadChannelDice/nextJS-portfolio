@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import Logo from './Logo'
 import { useRouter } from 'next/router'
-import  { TwitterIcon, GithubIcon, LinkedInIcon, PinterestIcon, DribbbleIcon, SunIcon, MoonIcon } from './Icons'
+import  { TwitterIcon, GithubIcon, LinkedInIcon, PinterestIcon, DribbbleIcon, BehanceIcon, ThreadsIcon, TumblrIcon, SunIcon, MoonIcon } from './Icons'
 import { motion} from "framer-motion"
 import useThemeSwitcher from './hooks/useThemeSwitcher'
 
@@ -100,45 +100,51 @@ const NavBar = () => {
             <nav>
                 <CustomLink href={"/"} title="Home" classname='mr-4'/>
                 <CustomLink href={"/projects"} title="Projects" classname='mx-4'/>
-                <CustomLink href={"/articles"} title="Articles" classname='ml-4'/>
+                {/* <CustomLink href={"/articles"} title="Articles" classname='ml-4'/> */}
             </nav>
             
             <nav className='flex items-center justify-center flex-wrap'>
-                <motion.a href={"https://twitter.com"} target={"_blank"}
+                <motion.a href={"https://www.threads.net/@gentleman_tomcat"} target={"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
-                className='w-6 mr-3'
+                className='w-6 mr-3 dark:fill-light'
                 >
-                    <TwitterIcon/>
+                    <ThreadsIcon/>
                 </motion.a>
-                <motion.a href={"https://twitter.com"} target={"_blank"}
+
+                <motion.a href={"https://github.com/DeadChannelDice"} target={"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 className='w-6 mx-3'
                 >
                     <GithubIcon/>
                 </motion.a>
-                <motion.a href={"https://twitter.com"} target={"_blank"}
+
+                <motion.a href={"https://www.linkedin.com/in/michael-charpin/"} target={"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 className='w-6 mx-3'
                 >
                     <LinkedInIcon/>
                 </motion.a>
-                <motion.a href={"https://twitter.com"} target={"_blank"}
+                
+
+                <motion.a href={"https://www.behance.net/MichaelCharpin"} target={"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 className='w-6 mx-3'
                 >
-                    <PinterestIcon/>
+                    <BehanceIcon/>
                 </motion.a>
-                <motion.a href={"https://twitter.com"} target={"_blank"}
+
+                <motion.a href={"https://www.tumblr.com/dead-channel"} target={"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
-                className='w-6 ml-3'
+                className='w-6 mx-3 fill-dark dark:fill-light'
                 >
-                    <DribbbleIcon/>
+                    <TumblrIcon/>
                 </motion.a>
+
                 <button
                 onClick={() => setMode(mode === "light" ? "dark" : "light")}
                 className={`ml-3 flex items-center justify-center rounded-full p-1
@@ -163,16 +169,16 @@ const NavBar = () => {
                 <nav className='flex items-center flex-col justify-center'>
                     <CustomMobileLink href={"/"} title="Home" classname='' toggle={handleClick} />
                     <CustomMobileLink href={"/projects"} title="Projects" classname='' toggle={handleClick} />
-                    <CustomMobileLink href={"/articles"} title="Articles" classname='' toggle={handleClick} />
+                    {/* <CustomMobileLink href={"/articles"} title="Articles" classname='' toggle={handleClick} /> */}
                 </nav>
                 
                 <nav className='flex items-center justify-center flex-wrap my-2'>
                     <motion.a href={"https://twitter.com"} target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
-                    className='w-6 mr-3 sm:mx-1'
+                    className='w-6 mr-3 sm:mx-1 fill-light dark:fill-dark'
                     >
-                        <TwitterIcon/>
+                        <ThreadsIcon/>
                     </motion.a>
 
                     <motion.a href={"https://twitter.com"} target={"_blank"}
@@ -194,18 +200,20 @@ const NavBar = () => {
                     <motion.a href={"https://twitter.com"} target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
-                    className='w-6 mx-3 bg-light rounded-full sm:mx-1'
+                    className='w-6 mx-3  rounded-full sm:mx-1 '
                     >
-                        <PinterestIcon/>
+                        <BehanceIcon/>
                     </motion.a>
 
                     <motion.a href={"https://twitter.com"} target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
-                    className='w-6 ml-3 sm:mx-1 '
+                    className='w-6 mx-3 fill-light dark:fill-dark rounded-full sm:mx-1'
                     >
-                        <DribbbleIcon/>
+                        <TumblrIcon/>
                     </motion.a>
+
+                    
 
                     <button
                     onClick={() => setMode(mode === "light" ? "dark" : "light")}
