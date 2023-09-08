@@ -23,9 +23,9 @@ const FramerImage = motion(Image)
 
 const FeaturedProject =( {type, title, summary, img, link, github} ) => {
     return (
-        <article className='w-full flex items-center justify-between rounded-3xl rounded-br-2xl border-2 border-solid border-dark bg-light dark:bg-dark dark:border-light shadow-xl p-12 relative lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'>
-            {/* <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl ' /> */}
-            <Link href={link} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full'>
+        <article className='w-full flex items-center justify-between rounded-3xl rounded-br-2xl border-2 border-solid border-slate-200 bg-slate-100 dark:bg-zinc-800 dark:border-zinc-900 shadow-xl p-12 relative lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'>
+            
+            <Link href={link} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full drop-shadow-md'>
                 <FramerImage src={img} alt={title} 
                     className='w-full h-auto'
                     priority={true}
@@ -41,7 +41,7 @@ const FeaturedProject =( {type, title, summary, img, link, github} ) => {
                 </Link>
                 <p className='my-2 font-medium text-dark dark:text-light'>{summary}</p>
                 <div className='mt-2 flex items-center'>
-                    <Link href={link} target='_blank' className='mr-4 rounded-lg border-2 border-solid border-dark hover:bg-dark hover:text-light dark:text-light dark:hover:text-dark  dark:border-light dark:hover:bg-light p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base '>Visit Project</Link>
+                    <Link href={link} target='_blank' className='mr-4 rounded-lg border-2 border-solid border-slate-500 hover:bg-primary/90 drop-shadow-md hover:text-light hover:border-primary dark:text-light dark:hover:text-dark  dark:border-light dark:hover:bg-primaryDark/70 dark:hover:border-primaryDark/70 p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base '>Visit Project</Link>
                     <Link href={{github}} target='_blank' className='w-10 rounded-full  fill-dark  dark:fill-light'> <GithubIcon/> </Link>
                 </div>
             </div>
@@ -51,8 +51,8 @@ const FeaturedProject =( {type, title, summary, img, link, github} ) => {
 
 const FeaturedIDProject =( {type, title, summary, img, link} ) => {
     return (
-        <article className='w-full flex items-center justify-between rounded-3xl rounded-br-2xl border-2 border-solid border-dark bg-light dark:bg-dark dark:border-light shadow-xl p-12 relative lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'>
-            {/* <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl ' /> */}
+        <article className='w-full flex items-center justify-between rounded-3xl rounded-br-2xl border-2 border-solid border-slate-200 bg-slate-100 dark:bg-zinc-800 dark:border-zinc-900 shadow-xl p-12 relative lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'>
+            
             <Link href={link} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full'>
                 <FramerImage src={img} alt={title} 
                     className='w-full h-auto'
@@ -69,7 +69,7 @@ const FeaturedIDProject =( {type, title, summary, img, link} ) => {
                 </Link>
                 <p className='my-2 font-medium text-dark dark:text-light'>{summary}</p>
                 <div className='mt-2 flex items-center'>
-                    <Link href={link} target='_blank' className='mr-4 rounded-lg border-2 border-solid border-dark hover:bg-dark hover:text-light dark:text-light dark:hover:text-dark  dark:border-light dark:hover:bg-light p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base '>Visit Project</Link>
+                    <Link href={link} target='_blank' className='mr-4 rounded-lg border-2 border-solid border-slate-500 hover:bg-primary/90 drop-shadow-md hover:text-light hover:border-primary dark:text-light dark:hover:text-dark  dark:border-light dark:hover:bg-primaryDark/70 dark:hover:border-primaryDark/70 p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base  '>Visit Project</Link>
                     
                 </div>
             </div>
@@ -81,7 +81,7 @@ const MinorProject = ({title, type, img, link, github}) => {
     return (
         <article className='
         w-full flex flex-col items-center justify-between rounded-3xl rounded-br-2xl
-        border-2 border-solid border-dark bg-light dark:border-light dark:bg-dark  shadow-xl p-12 relative'>
+        border-2 border-solid border-slate-200 bg-slate-100 dark:bg-zinc-800 dark:border-zinc-900  shadow-xl p-12 relative'>
             
             <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg'>
                 <FramerImage src={img} alt={title} 
@@ -95,8 +95,7 @@ const MinorProject = ({title, type, img, link, github}) => {
                     <h2 className='w-full my-2 text-left text-3xl font-bold dark:text-light'>{title}</h2>
                 </Link>
                 <div className='w-full mt-2 flex items-center justify-between'>
-                    <Link href={link} target='_blank' className='mr-4 rounded-lg border-2 border-solid border-dark hover:bg-dark hover:text-light dark:text-light dark:hover:text-dark  dark:border-light dark:hover:bg-light p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base 
-                    '>Visit</Link>
+                    <Link href={link} target='_blank' className='mr-4 rounded-lg border-2 border-solid border-slate-500 hover:bg-primary/90 drop-shadow-md hover:text-light hover:border-primary dark:text-light dark:hover:text-dark  dark:border-light dark:hover:bg-primaryDark/70 dark:hover:border-primaryDark/70 p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base '>Visit</Link>
                     <Link href={github} target='_blank' className='w-10 rounded-full  fill-dark  dark:fill-light'> <GithubIcon /> </Link>
                     
                 </div>
@@ -109,7 +108,7 @@ const MinorIDProject = ({title, type, img, link}) => {
     return (
         <article className='
         w-full flex flex-col items-center justify-between rounded-3xl rounded-br-2xl
-        border-2 border-solid border-dark bg-light dark:border-light dark:bg-dark  shadow-xl p-12 relative'>
+        border-2 border-solid border-slate-200 bg-slate-100 dark:bg-zinc-800 dark:border-zinc-900  shadow-xl p-12 relative'>
             
             <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg'>
                 <FramerImage src={img} alt={title} 
@@ -123,8 +122,7 @@ const MinorIDProject = ({title, type, img, link}) => {
                     <h2 className='w-full my-2 text-left text-3xl font-bold dark:text-light'>{title}</h2>
                 </Link>
                 <div className='w-full mt-2 flex items-center justify-between'>
-                    <Link href={link} target='_blank' className='mr-4 rounded-lg border-2 border-solid border-dark hover:bg-dark hover:text-light dark:text-light dark:hover:text-dark  dark:border-light dark:hover:bg-light p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base 
-                    '>Visit</Link>
+                    <Link href={link} target='_blank' className='mr-4 rounded-lg border-2 border-solid border-slate-500 hover:bg-primary/90 drop-shadow-md hover:text-light hover:border-primary dark:text-light dark:hover:text-dark  dark:border-light dark:hover:bg-primaryDark/70 dark:hover:border-primaryDark/70 p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base '>Visit</Link>
                     
                     
                 </div>
@@ -148,7 +146,7 @@ const projects = () => {
     </Head>
     <TransitionEffect/>
     <main className='flex w-full flex-col items-center justify-center'>
-        <Layout className='pt-16'>
+        <Layout className='pt-16 '>
             <AnimatedText text={"Web Development"}
             classname='mb-16 !text-6xl md:!text-5xl sm:!text-3xl'
             />
