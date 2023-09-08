@@ -26,12 +26,12 @@ export default function Home() {
           <div className="flex justify-between w-full items-center lg:flex-col mb-64 mt-24 ">
             <div className='w-1/2 md:w-full lg:w-3/4 '>
               <Image src={ profilePic } alt="Mike Charpin" 
-                className='w-full h-auto p-8 ' 
+                className='w-full h-auto border-transparent rounded-2xl border-solid border ' 
                 priority={true}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
             </div>
-            <div className='w-1/2 flex flex-col items-center self-center lg:w-full'>
+            <div className='w-1/2 flex flex-col items-center self-center lg:w-full ml-8'>
               <AnimatedText text="Crafting Joy Through Design!" classname='!text-left !text-6xl 
               xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl
               '/>
