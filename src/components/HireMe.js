@@ -1,5 +1,5 @@
 import React from 'react'
-import { CircularText } from './Icons'
+import { CircularTextID } from './Icons'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -10,7 +10,7 @@ const HireMe = () => {
     md:right-8 md:left-auto md:top-0 md:bottom-auto md:absolute
     '>
         <div className="w-48 h-auto flex items-center justify-center relative md:w-24">
-            <CircularText className={"fill-dark animate-reverse-spin dark:fill-light"} />
+            <CircularTextID className={"fill-dark animate-reverse-spin dark:fill-light"} />
 
             <Link href="mailto:Michael.Charpin@gmail.com" 
               className='
