@@ -4,9 +4,9 @@ const Layout = ({children, className=""}) => {
   return (
     <div 
     className={`
-    w-full h-full inline-block z-0 bg-light p-32 dark:bg-dark 
+    w-full h-full inline-block z-0 bg-light px-96 py-32 dark:bg-dark 
     ${className}
-    xl:p-24 lg:p-16 md:p-12 sm:p-8
+    xl:p-24 lg:p-16 md:p-12 sm:p-8 2xl:px-32
     
     `}>
         {children}
