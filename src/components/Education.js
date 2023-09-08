@@ -10,8 +10,8 @@ const Details = ({type, time, place, info}) => {
         <li ref={ref}
             className='
             my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-start justify-between
-            border-4 border-dark/60 py-10 px-16 rounded-xl
-            dark:border-4 dark:border-solid dark:border-primaryDark/75 xs:w-full sm:w-full'>
+            border-2 border-dark/60 py-10 px-16 rounded-xl
+            dark:border-2 dark:border-solid dark:border-light/90 xs:w-full sm:w-full'>
             {/* <LiIcon reference={ref}/> */}
             <motion.div
             initial={{y:50}}

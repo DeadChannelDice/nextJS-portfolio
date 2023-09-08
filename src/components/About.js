@@ -57,18 +57,14 @@ const AnimatedNumbers = ({value}) => {
                     </div>
                     
                     <div className='
-                            col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8
-                            dark:border-light dark:bg-dark xl:col-span-4 md:order-1 md:col-span-8
+                            col-span-3 relative h-max rounded-2xl border-2 border-solid border-transparent bg-light p-8
+                             dark:bg-dark xl:col-span-4 md:order-1 md:col-span-8
                         '>
-                        <div className='
-                            absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[1.5rem] bg-dark
-                            dark:bg-light 
-
-                        ' />
+                        
                         <Image src={profilePic} alt="Mike Charpin" 
                             className='
                                 w-full h-auto rounded-2xl border-2 border-transparent border-solid
-                                dark:border-light
+                                dark:border-light/90 drop-shadow-xl
                             '
                                 priority={true}
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
