@@ -78,7 +78,7 @@ const FeaturedIDProject =( {type, title, summary, img, link} ) => {
 const MinorProject = ({title, type, img, link, github}) => {
     return (
         <article className='w-full flex flex-col items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl p-12 relative'>
-            <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl' />
+            
             <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg'>
                 <FramerImage src={img} alt={title} 
                 className='w-full h-auto rounded-lg'
