@@ -115,7 +115,7 @@ const NavBar = () => {
                 <motion.a href={"https://github.com/DeadChannelDice"} target={"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
-                className='w-6 mx-3'
+                className='w-6 mx-3 rounded-full  fill-dark  dark:fill-light'
                 >
                     <GithubIcon/>
                 </motion.a>
@@ -184,7 +184,7 @@ const NavBar = () => {
                     <motion.a href={"https://twitter.com"} target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
-                    className='w-6 mx-3 bg-light rounded-full dark:bg-dark sm:mx-1 '
+                    className='w-6 mx-3 rounded-full  fill-light  dark:fill-dark sm:mx-1 '
                     >
                         <GithubIcon/>
                     </motion.a>
