@@ -5,7 +5,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import portfolioImage from "../../public/images/projects/Portfolio-Edited.JPG"
+import portfolioImage from "../../public/images/projects/Portfolio-Edited-01.jpeg"
 import rockPaperScissorsImage from "../../public/images/projects/RockPaperScissors-edited.JPG"
 import pratumImage from "../../public/images/projects/Pratum-Edited.JPG"
 import summerReadingImage from "../../public/images/projects/SummerReading-Edited.JPG"
