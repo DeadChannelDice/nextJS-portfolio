@@ -39,7 +39,7 @@ export default function Home() {
               Experienced Industrial Designer transitioning to web development, blending usability expertise with coding to create seamless digital experiences.
               </p>
               <div className='flex items-center self-start mt-2 lg:self-center '>
-                <Link href="/dummy.pdf" target={'_blank'}
+                <Link href="/CharpinResume-0923.pdf" target={'_blank'}
                 className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold
                 hover:bg-light hover:text-dark hover:border-dark border-2 border-solid border-transparent
                 dark:text-dark dark:bg-light hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
