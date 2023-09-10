@@ -5,7 +5,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import cryptoProjectImage from "../../public/images/projects/crypto-screener-cover-image.jpg"
 import portfolioImage from "../../public/images/projects/Portfolio-Edited.JPG"
 import rockPaperScissorsImage from "../../public/images/projects/RockPaperScissors-edited.JPG"
 import pratumImage from "../../public/images/projects/Pratum-Edited.JPG"
@@ -170,8 +169,8 @@ const projects = () => {
                         img={cryptoProjectImage} 
                         type={"Featured Project"}
                         github={"https://github.com/DeadChannelDice/food-tracker"}            
-                        /> */}
-                    </div>
+                        />
+                    </div> */}
                     <div className="col-span-6">
                     <MinorProject
                         title={"Rock Paper Scissors"}
