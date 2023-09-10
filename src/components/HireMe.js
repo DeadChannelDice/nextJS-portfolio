@@ -1,7 +1,6 @@
 import React from 'react'
 import { CircularTextID } from './Icons'
 import Link from 'next/link'
-import Image from 'next/image'
 
 const HireMe = () => {
   return (
