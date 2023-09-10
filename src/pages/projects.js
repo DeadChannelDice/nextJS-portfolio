@@ -6,9 +6,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import portfolioImage from "../../public/images/projects/Portfolio-Edited-01.jpeg"
-import rockPaperScissorsImage from "../../public/images/projects/RockPaperScissors-edited.JPG"
-import pratumImage from "../../public/images/projects/Pratum-Edited.JPG"
-import summerReadingImage from "../../public/images/projects/SummerReading-Edited.JPG"
+import rockPaperScissorsImage from "../../public/images/projects/RockPaperScissors-edited.jpeg"
+import pratumImage from "../../public/images/projects/Pratum-Edited.jpeg"
+import summerReadingImage from "../../public/images/projects/SummerReading-Edited.jpeg"
 import pixelSketchImage from "../../public/images/projects/PixelSketch-1280x720.jpeg"
 import proteusSingleHandAttachmentImage from "../../public/images/projects/proteusSingleHandAttachment.jpeg"
 import TC75MobileImage from "../../public/images/projects/TC75MobileImage.jpeg"
