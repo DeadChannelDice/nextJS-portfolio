@@ -162,7 +162,7 @@ const projects = () => {
                         github={"https://github.com/DeadChannelDice/nextJS-portfolio"}            
                         />
                     </div>
-                    <div className='col-span-12'>
+                    {/* <div className='col-span-12'>
                     <FeaturedProject
                         title={"Food Tracking App"}
                         summary={"A feature-rich Food Tracking App using Vanilla Javascript, chart.js, and Firebase. It shows details regarding the food you consumed, tracking your macro nutrient intake."}
@@ -170,7 +170,7 @@ const projects = () => {
                         img={cryptoProjectImage} 
                         type={"Featured Project"}
                         github={"https://github.com/DeadChannelDice/food-tracker"}            
-                        />
+                        /> */}
                     </div>
                     <div className="col-span-6">
                     <MinorProject
