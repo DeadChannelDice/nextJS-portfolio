@@ -180,7 +180,7 @@ const projects = () => {
                         github={"https://github.com/DeadChannelDice/RPS"}            
                         />
                     </div>
-                    <div className="col-span-6">
+                    {/* <div className="col-span-6">
                     <MinorProject
                         title={"Book Tracking"}
                         link={"/"}
@@ -188,7 +188,7 @@ const projects = () => {
                         type={"Portfolio Website"}
                         github={"https://github.com/DeadChannelDice/library-app"}            
                         />
-                    </div>
+                    </div> */}
                     <div className="col-span-6">
                     <MinorProject
                         title={"Landscaping Company"}
