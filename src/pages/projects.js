@@ -50,9 +50,9 @@ const FeaturedProject =( {type, title, summary, img, link, github} ) => {
 
 const FeaturedIDProject =( {type, title, summary, img, link} ) => {
     return (
-        <article className='w-full flex items-center justify-between rounded-3xl border-2 border-solid border-slate-200 bg-slate-100 dark:bg-zinc-800 dark:border-zinc-900 shadow-xl p-12 relative lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4'>
+        <article className='w-full flex items-center justify-between rounded-3xl rounded-br-2xl border-2 border-solid border-slate-200 bg-slate-100 dark:bg-zinc-800 dark:border-zinc-900 shadow-xl p-12 relative lg:flex-col lg:p-8 xs:rounded-2xl xs:p-4 '>
             
-            <Link href={link} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full'>
+            <Link href={link} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full drop-shadow-md'>
                 <FramerImage src={img} alt={title} 
                     className='w-full h-auto'
                     priority={true}
@@ -64,11 +64,11 @@ const FeaturedIDProject =( {type, title, summary, img, link} ) => {
             <div className='w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6'>
                 <span className='text-primary dark:text-primaryDark font-medium text-xl xs:text-base'>{type}</span>
                 <Link href={link}  target="_blank" className='hover:underline underline-offset-2'>
-                    <h2 className='my-2 w-full text-left text-4xl font-bold sm:text-sm dark:text-light'>{title}</h2>
+                    <h2 className='my-2 w-full text-left text-4xl font-bold sm:text-xl dark:text-light'>{title}</h2>
                 </Link>
                 <p className='my-2 font-medium text-dark dark:text-light'>{summary}</p>
                 <div className='mt-2 flex items-center'>
-                    <Link href={link} target='_blank' className='mr-4 rounded-lg border-2 border-solid border-slate-500 hover:bg-primary/90 drop-shadow-md hover:text-light hover:border-primary dark:text-light dark:hover:text-dark  dark:border-light dark:hover:bg-primaryDark/70 dark:hover:border-primaryDark/70 p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base  '>Visit Project</Link>
+                    <Link href={link} target='_blank' className='mr-4 rounded-lg border-2 border-solid border-slate-500 hover:bg-primary/90 drop-shadow-md hover:text-light hover:border-primary dark:text-light dark:hover:text-dark  dark:border-light dark:hover:bg-primaryDark/70 dark:hover:border-primaryDark/70 p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base '>Visit Project</Link>
                     
                 </div>
             </div>
@@ -96,7 +96,7 @@ const MinorProject = ({title, type, img, link, github}) => {
                     </Link>
                 </div>
             </div>
-            <div className='w-full mt-2 flex items-end justify-between'>
+            <div className='w-full mt-2 flex items-end justify-start'>
                     <Link href={link} target='_blank' className='mr-4 rounded-lg border-2 border-solid border-slate-500 hover:bg-primary/90 drop-shadow-md hover:text-light hover:border-primary dark:text-light dark:hover:text-dark  dark:border-light dark:hover:bg-primaryDark/70 dark:hover:border-primaryDark/70 p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base'>Visit</Link>
                     <Link href={github} target='_blank' className='w-10 rounded-full  fill-dark  dark:fill-light'> <GithubIcon /> </Link>
                     
@@ -108,26 +108,26 @@ const MinorProject = ({title, type, img, link, github}) => {
 const MinorIDProject = ({title, type, img, link}) => {
     return (
         <article className='
-        w-full flex flex-col items-center justify-between rounded-3xl rounded-br-2xl
-        border-2 border-solid border-slate-200 bg-slate-100 dark:bg-zinc-800 dark:border-zinc-900  shadow-xl p-12 relative'>
+        w-full h-full flex flex-col justify-between rounded-3xl 
+        border-2 border-solid border-slate-200 bg-slate-100 dark:bg-zinc-800 dark:border-zinc-900  shadow-xl p-12 relative lg:p-8 xs:p-4'>
             
-            <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded-lg'>
-                <FramerImage src={img} alt={title} 
-                className='w-full h-auto rounded-lg'
-                whileHover={{scale:1.05}}
-                transition={{duration:0.3}}/>
-            </Link>
-            <div className='w-full flex flex-col items-start justify-between'>
-                <span className='text-primary dark:text-primaryDark font-medium text-xl'>{type}</span>
-                <Link href={link}  target="_blank" className='hover:underline underline-offset-2'>
-                    <h2 className='w-full my-2 text-left text-3xl font-bold dark:text-light'>{title}</h2>
+            <div>
+                <Link href={link} target='_blank' className='w-full h-auto cursor-pointer overflow-hidden rounded-lg drop-shadow-md'>
+                    <FramerImage src={img} alt={title}
+                    className='w-full h-auto'
+                    whileHover={{scale:1.05}}
+                    transition={{duration:0.3}}/>
                 </Link>
-                <div className='w-full mt-2 flex items-center justify-between'>
-                    <Link href={link} target='_blank' className='mr-4 rounded-lg border-2 border-solid border-slate-500 hover:bg-primary/90 drop-shadow-md hover:text-light hover:border-primary dark:text-light dark:hover:text-dark  dark:border-light dark:hover:bg-primaryDark/70 dark:hover:border-primaryDark/70 p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base '>Visit</Link>
-                    
-                    
+                <div className='w-full  flex flex-col items-start justify-between pt-2'>
+                    <span className='text-primary dark:text-primaryDark font-medium text-xl sm:text-base'>{type}</span>
+                    <Link href={link}  target="_blank" className='hover:underline underline-offset-2 h-full'>
+                        <h2 className='w-full h-full my-2 text-left text-3xl font-bold dark:text-light sm:text-xl '>{title}</h2>
+                    </Link>
                 </div>
             </div>
+            <div className='w-full mt-2 flex items-end justify-start'>
+                    <Link href={link} target='_blank' className='mr-4 rounded-lg border-2 border-solid border-slate-500 hover:bg-primary/90 drop-shadow-md hover:text-light hover:border-primary dark:text-light dark:hover:text-dark  dark:border-light dark:hover:bg-primaryDark/70 dark:hover:border-primaryDark/70 p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base'>Visit</Link>                    
+                </div>
         </article>
     )
 }
@@ -214,10 +214,10 @@ const projects = () => {
 
                 </div>
 
-                {/* <AnimatedText text={"Industrial Design"}
-                    classname='mb-16 mt-16 !text-6xl md:!text-5xl sm:!text-3xl'
+                <AnimatedText text={"Industrial Design"}
+                    classname='mb-8 mt-16 !text-6xl md:!text-5xl sm:!text-3xl'
                 />
-                 <div className='grid grid-col-2 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
+                 <div className='grid grid-cols-2 gap-16 gap-y-24 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-y-8 '>
                     <div className='col-span-2'>
                         <FeaturedIDProject
                         title={"Fitness Machine Attachment"}
@@ -228,7 +228,7 @@ const projects = () => {
                         />
                     </div>
 
-                    <div className="col-span-1">
+                    <div className="col-span-1 md:col-span-2">
                     <MinorIDProject
                         title={"Smart Device Accessory"}
                         link={"https://www.behance.net/gallery/124182657/TC75-Mobile-Dimensioning-Attachment"}
@@ -237,7 +237,7 @@ const projects = () => {
                         />
                     </div>
 
-                    <div className="col-span-1">
+                    <div className="col-span-1 md:col-span-2">
                     <MinorIDProject
                         title={"Smart Device Accessory"}
                         link={"https://www.behance.net/gallery/124176483/TC51TC56-Holster-for-Zebra-Technologies"}
@@ -246,7 +246,7 @@ const projects = () => {
                         />
                     </div>
 
-                    <div className="col-span-1">
+                    <div className="col-span-1 md:col-span-2">
                     <MinorIDProject
                         title={"Brand Logo"}
                         link={"https://www.behance.net/gallery/177960873/Dead-Channel-Logo"}
@@ -254,7 +254,7 @@ const projects = () => {
                         type={"Dead Channel"}          
                         />
                     </div>
-                </div> */}
+                </div>
         </Layout>
     </main>
     
