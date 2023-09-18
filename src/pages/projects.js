@@ -183,15 +183,15 @@ const projects = () => {
                         github={"https://github.com/DeadChannelDice/RPS"}            
                         />
                     </div>
-                    {/* <div className="col-span-1 md:col-span-2">
+                    <div className="col-span-1 md:col-span-2">
                     <MinorProject
                         title={"Book Tracking"}
-                        link={"/"}
+                        link={"https://deadchanneldice.github.io/library-app/"}
                         img={summerReadingImage} 
                         type={"Portfolio Website"}
                         github={"https://github.com/DeadChannelDice/library-app"}            
                         />
-                    </div> */}
+                    </div>
                     <div className="col-span-1 md:col-span-2">
                     <MinorProject
                         title={"Landscaping Company"}
