@@ -19,7 +19,7 @@ const Footer = () => {
             <span className='text-primary dark:text-primaryDark text-2xl px-1'>&#129497;</span>
             </div>
             
-            <Link href="https://github.com/DeadChannelDice"> Say hello</Link>
+            <Link href="https://www.linkedin.com/in/michael-charpin/"> Say hello</Link>
         </Layout>
     </footer>
   )
