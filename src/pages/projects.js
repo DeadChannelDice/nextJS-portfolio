@@ -179,13 +179,8 @@ const projects = () => {
                         title={"Rock Paper Scissors"}
                         link={"https://MikeCharpin.github.io/RPS/"}
                         img={rockPaperScissorsImage} 
-<<<<<<< HEAD
                         type={"Portfolio Website"}
                         github={"https://github.com/MikeCharpin/RPS"}            
-=======
-                        type={"Project Website"}
-                        github={"https://github.com/DeadChannelDice/RPS"}            
->>>>>>> f70b3b2d5672563a2350c78f219da5b22ef09dba
                         />
                     </div>
                     <div className="col-span-1 md:col-span-2">
@@ -202,13 +197,8 @@ const projects = () => {
                         title={"Landscaping Company"}
                         link={"https://MikeCharpin.github.io/Pratum-Landscapes/"}
                         img={pratumImage} 
-<<<<<<< HEAD
                         type={"Portfolio Website"}
                         github={"https://github.com/MikeCharpin/Pratum-Landscapes"}            
-=======
-                        type={"Project Website"}
-                        github={"https://github.com/DeadChannelDice/Pratum-Landscapes"}            
->>>>>>> f70b3b2d5672563a2350c78f219da5b22ef09dba
                         />
                     </div>
                     <div className="col-span-1 md:col-span-2">
@@ -216,13 +206,8 @@ const projects = () => {
                         title={"Pixel Art Drawing"}
                         link={"https://MikeCharpin.github.io/Pixel-Sketch/"}
                         img={pixelSketchImage} 
-<<<<<<< HEAD
                         type={"Portfolio Website"}
                         github={"https://github.com/MikeCharpin/Pixel-Sketch"}            
-=======
-                        type={"Project Website"}
-                        github={"https://github.com/DeadChannelDice/Pixel-Sketch"}            
->>>>>>> f70b3b2d5672563a2350c78f219da5b22ef09dba
                         />
                     </div>
                     
