@@ -186,7 +186,7 @@ const projects = () => {
                     <div className="col-span-1 md:col-span-2">
                     <MinorProject
                         title={"Book Tracking"}
-                        link={"https://deadchanneldice.github.io/library-app/"}
+                        link={"https://MikeCharpin.github.io/library-app/"}
                         img={summerReadingImage} 
                         type={"Portfolio Website"}
                         github={"https://github.com/MikeCharpin/library-app"}            
