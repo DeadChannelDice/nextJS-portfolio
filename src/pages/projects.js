@@ -158,26 +158,26 @@ const projects = () => {
                         link={"https://MichaelCharpin.com"}
                         img={portfolioImage} 
                         type={"Featured Project"}
-                        github={"https://github.com/DeadChannelDice/nextJS-portfolio"}            
+                        github={"https://github.com/MikeCharpin/nextJS-portfolio"}            
                         />
                     </div>
                     {/* <div className='col-span-12'>
                     <FeaturedProject
                         title={"Food Tracking App"}
                         summary={"A feature-rich Food Tracking App using Vanilla Javascript, chart.js, and Firebase. It shows details regarding the food you consumed, tracking your macro nutrient intake."}
-                        link={"https://deadchanneldice.github.io/food-tracker/"}
+                        link={"https://MikeCharpin.github.io/food-tracker/"}
                         img={cryptoProjectImage} 
                         type={"Featured Project"}
-                        github={"https://github.com/DeadChannelDice/food-tracker"}            
+                        github={"https://github.com/MikeCharpin/food-tracker"}            
                         />
                     </div> */}
                     <div className="col-span-6">
                     <MinorProject
                         title={"Rock Paper Scissors"}
-                        link={"https://deadchanneldice.github.io/RPS/"}
+                        link={"https://MikeCharpin.github.io/RPS/"}
                         img={rockPaperScissorsImage} 
                         type={"Portfolio Website"}
-                        github={"https://github.com/DeadChannelDice/RPS"}            
+                        github={"https://github.com/MikeCharpin/RPS"}            
                         />
                     </div>
                     <div className="col-span-6">
@@ -186,25 +186,25 @@ const projects = () => {
                         link={"/"}
                         img={summerReadingImage} 
                         type={"Portfolio Website"}
-                        github={"https://github.com/DeadChannelDice/library-app"}            
+                        github={"https://github.com/MikeCharpin/library-app"}            
                         />
                     </div>
                     <div className="col-span-6">
                     <MinorProject
                         title={"Landscaping Company"}
-                        link={"https://deadchanneldice.github.io/Pratum-Landscapes/"}
+                        link={"https://MikeCharpin.github.io/Pratum-Landscapes/"}
                         img={pratumImage} 
                         type={"Portfolio Website"}
-                        github={"https://github.com/DeadChannelDice/Pratum-Landscapes"}            
+                        github={"https://github.com/MikeCharpin/Pratum-Landscapes"}            
                         />
                     </div>
                     <div className="col-span-6">
                     <MinorProject
                         title={"Pixel Art Drawing"}
-                        link={"https://deadchanneldice.github.io/Pixel-Sketch/"}
+                        link={"https://MikeCharpin.github.io/Pixel-Sketch/"}
                         img={pixelSketchImage} 
                         type={"Portfolio Website"}
-                        github={"https://github.com/DeadChannelDice/Pixel-Sketch"}            
+                        github={"https://github.com/MikeCharpin/Pixel-Sketch"}            
                         />
                     </div>
                     
