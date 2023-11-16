@@ -157,7 +157,7 @@ const projects = () => {
                     <div className='col-span-2'>
                         <FeaturedProject
                         title={"Personal Portfolio Website"}
-                        summary={"This website you are on right now! Built with React, NextJS, and TailwindCSS"}
+                        summary={"This website you are on right now! Built with React, NextJS, Framer Motion and TailwindCSS"}
                         link={"https://MichaelCharpin.com"}
                         img={portfolioImage} 
                         type={"Featured Project"}
