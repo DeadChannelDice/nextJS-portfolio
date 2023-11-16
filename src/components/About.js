@@ -46,7 +46,7 @@ const AnimatedNumbers = ({value}) => {
                     <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8'>
                         <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light'>About</h2>
                         <p className='font-medium'>
-                        I&apos;m Mike Charpin, a web developer with experience in industrial design as a physical product designer. I bring a strong background in usability-focused design, having crafted a diverse range of products, from fitness machines to tabletop RPG accessories. 
+                        I&apos;m Mike Charpin, a web developer with experience in industrial design as a physical product designer. I bring a strong background in usability-focused design having crafted a diverse range of products, from fitness machines and printers to tabletop RPG accessories and helmets. 
                         </p>
                         <p className='my-4 font-medium'>
                         My passion lies in seeing ideas come to life, refining them through user feedback, and ultimately making a positive impact on people&apos;s lives. I&apos;m known for my resourcefulness, tackling challenges head-on, and knowing when to seek expertise. My approach to problem-solving is with research, exploration, rapid prototyping, and a commitment to user-centered solutions.
