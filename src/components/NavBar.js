@@ -112,7 +112,7 @@ const NavBar = () => {
                     <ThreadsIcon/>
                 </motion.a>
 
-                <motion.a href={"https://github.com/DeadChannelDice"} target={"_blank"}
+                <motion.a href={"https://github.com/MikeCharpin"} target={"_blank"}
                 whileHover={{y:-2}}
                 whileTap={{scale:0.9}}
                 className='w-6 mx-3 rounded-full  fill-dark  dark:fill-light'
@@ -181,7 +181,7 @@ const NavBar = () => {
                         <ThreadsIcon/>
                     </motion.a>
 
-                    <motion.a href={"https://github.com/DeadChannelDice"} target={"_blank"}
+                    <motion.a href={"https://github.com/MikeCharpin"} target={"_blank"}
                     whileHover={{y:-2}}
                     whileTap={{scale:0.9}}
                     className='w-6 mx-3 rounded-full  fill-light  dark:fill-dark sm:mx-1 '

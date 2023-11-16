@@ -12,7 +12,7 @@ const Footer = () => {
             <div className='flex items-center lg:py-2'>
             Built by&nbsp;
             <Link 
-              href="https://github.com/DeadChannelDice" 
+              href="https://github.com/MikeCharpin" 
               target={"_blank"} 
               className='underline underline-offset-2
             '> Mike Charpin</Link>
