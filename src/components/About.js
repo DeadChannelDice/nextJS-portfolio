@@ -46,13 +46,13 @@ const AnimatedNumbers = ({value}) => {
                     <div className='col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8'>
                         <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light'>About</h2>
                         <p className='font-medium'>
-                        I&apos;m Mike Charpin, an experienced Industrial Designer transitioning into web development. With a strong background in usability-focused design, I&apos;ve crafted a diverse range of products, from fitness machines to tabletop RPG accessories. 
+                        I&apos;m Mike Charpin, a web developer with experience in industrial design as a physical product designer. I bring a strong background in usability-focused design, having crafted a diverse range of products, from fitness machines to tabletop RPG accessories. 
                         </p>
                         <p className='my-4 font-medium'>
-                        My passion lies in seeing ideas come to life, refining them through prototypes and user feedback, and ultimately making a positive impact on people&apos;s lives. I&apos;m known for my resourcefulness, tackling challenges head-on, and knowing when to seek expertise. I approach problem-solving with research, rapid prototyping, and a commitment to user-centered solutions.
+                        My passion lies in seeing ideas come to life, refining them through user feedback, and ultimately making a positive impact on people&apos;s lives. I&apos;m known for my resourcefulness, tackling challenges head-on, and knowing when to seek expertise. My approach to problem-solving is with research, exploration, rapid prototyping, and a commitment to user-centered solutions.
                         </p>
                         <p className='font-medium'>
-                        I aim to be a creative problem solver who delivers results while fostering a collaborative and enjoyable working environment. Whether I&apos;m working on a website, mobile app, or physical product, I bring my commitment to design excellence and user-centered thinking to every project I work on. I look forward to the opportunity to bring my skills and passion to your next project.
+                        I aim to be a creative problem solver who delivers results while fostering a collaborative working environment. Whether I&apos;m working on a website, web app, or physical product, I bring my commitment to design excellence and user-centered thinking to every project. I look forward to the opportunity to bring my skills and passion to your next project.
                         </p>
                     </div>
                     
