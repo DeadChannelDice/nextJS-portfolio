@@ -14,6 +14,7 @@ import proteusSingleHandAttachmentImage from "../../public/images/projects/prote
 import TC75MobileImage from "../../public/images/projects/TC75MobileImage.jpeg"
 import TC51HolsterImage from "../../public/images/projects/TC51HolsterImage.jpeg"
 import DeadChannelLogoImage from "../../public/images/projects/DeadChannelLogoImage.jpeg"
+import ResumeBuilderImage from "../../public/images/projects/ResumeBuilder-Edited.jpeg"
 import TransitionEffect from '@/components/TransitionEffect'
 import { motion } from 'framer-motion'
 
@@ -174,6 +175,16 @@ const projects = () => {
                         github={"https://github.com/MikeCharpin/food-tracker"}            
                         />
                     </div> */}
+                    <div className='col-span-2'>
+                        <FeaturedProject
+                        title={"Resume Builder React App"}
+                        summary={"Responsive web app used to build and format a resume. Built with TypeScript, React, Vite, TailwindCSS, and Shadcn/ui"}
+                        link={"https://resume-builder-xoyp-91caoeq91-mikecharpin.vercel.app/"}
+                        img={ResumeBuilderImage} 
+                        type={"Featured Project"}
+                        github={"https://github.com/MikeCharpin/ResumeBuilder"}            
+                        />
+                    </div>
                     <div className="col-span-1 md:col-span-2">
                     <MinorProject
                         title={"Rock Paper Scissors"}
