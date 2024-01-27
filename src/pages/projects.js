@@ -179,7 +179,7 @@ const projects = () => {
                         <FeaturedProject
                         title={"Resume Builder React App"}
                         summary={"Responsive web app used to build and format a resume. Built with TypeScript, React, Vite, TailwindCSS, and Shadcn/ui"}
-                        link={"https://resume-builder-xoyp-91caoeq91-mikecharpin.vercel.app/"}
+                        link={"https://resume-builder-xoyp.vercel.app/"}
                         img={ResumeBuilderImage} 
                         type={"Featured Project"}
                         github={"https://github.com/MikeCharpin/ResumeBuilder"}            
