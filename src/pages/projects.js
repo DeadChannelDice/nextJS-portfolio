@@ -15,6 +15,9 @@ import TC75MobileImage from "../../public/images/projects/TC75MobileImage.jpeg"
 import TC51HolsterImage from "../../public/images/projects/TC51HolsterImage.jpeg"
 import DeadChannelLogoImage from "../../public/images/projects/DeadChannelLogoImage.jpeg"
 import ResumeBuilderImage from "../../public/images/projects/ResumeBuilder-Edited.jpeg"
+import TulipTasksImage from "../../public/images/projects/TulipTasks.webp"
+import DatsunResourceImage from "../../public/images/projects/DatsunResource-Edited.webp"
+import DiceCapsuleImage from "../../public/images/projects/DiceCapsule-Edited.webp"
 import TransitionEffect from '@/components/TransitionEffect'
 import { motion } from 'framer-motion'
 
@@ -157,6 +160,26 @@ const projects = () => {
                 '>
                     <div className='col-span-2'>
                         <FeaturedProject
+                        title={"Tulip Tasks Prioritization App"}
+                        summary={"A thoughtful React web app designed to help overwhelmed people prioritize thier goals, projects, and tasks."}
+                        link={"https://task-priority.vercel.app/"}
+                        img={TulipTasksImage} 
+                        type={"Featured Project"}
+                        github={"https://github.com/MikeCharpin/taskPriority"}            
+                        />
+                    </div>
+                    <div className='col-span-2'>
+                        <FeaturedProject
+                        title={"Datsun Resource Website"}
+                        summary={"A comprehensive and searchable collection of Datsun Fairlady-Z part diagrams."}
+                        link={"https://datsunresource.online/"}
+                        img={DatsunResourceImage} 
+                        type={"Featured Project"}
+                        github={"https://github.com/MikeCharpin"}            
+                        />
+                    </div>
+                    <div className='col-span-2'>
+                        <FeaturedProject
                         title={"Personal Portfolio Website"}
                         summary={"This website you are on right now! Built with React, NextJS, Framer Motion and TailwindCSS"}
                         link={"https://MichaelCharpin.com"}
@@ -165,16 +188,6 @@ const projects = () => {
                         github={"https://github.com/MikeCharpin/nextJS-portfolio"}            
                         />
                     </div>
-                    {/* <div className='col-span-2'>
-                    <FeaturedProject
-                        title={"Food Tracking App"}
-                        summary={"A feature-rich Food Tracking App using Vanilla Javascript, chart.js, and Firebase. It shows details regarding the food you consumed, tracking your macro nutrient intake."}
-                        link={"https://MikeCharpin.github.io/food-tracker/"}
-                        img={cryptoProjectImage} 
-                        type={"Featured Project"}
-                        github={"https://github.com/MikeCharpin/food-tracker"}            
-                        />
-                    </div> */}
                     <div className='col-span-2'>
                         <FeaturedProject
                         title={"Resume Builder React App"}
@@ -236,6 +249,15 @@ const projects = () => {
                         link={"https://www.behance.net/gallery/177955717/Proteus-Single-Hand-Attachment"}
                         img={proteusSingleHandAttachmentImage} 
                         type={"Proteus Motion"}            
+                        />
+                    </div>
+                    <div className='col-span-2'>
+                        <FeaturedIDProject
+                        title={"Dead Channel Dice Capsule"}
+                        summary={"The Dice Capsule offers an elegant way to display and transport your favorite dice."}
+                        link={"https://www.behance.net/gallery/178339557/Dead-Channel-Dice-Capsule"}
+                        img={DiceCapsuleImage} 
+                        type={"Dead Channel"}            
                         />
                     </div>
 
