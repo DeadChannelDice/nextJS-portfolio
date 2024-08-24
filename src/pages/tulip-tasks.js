@@ -10,6 +10,8 @@ import TransitionEffect from '@/components/TransitionEffect'
 import { motion } from 'framer-motion'
 import Timeline from '@/components/Timeline'
 import { Shapes } from 'lucide-react'
+import TulipTasksInsights from '@/components/tulipTasksPortfolio/TulipTasksInsights'
+import TulipTasksWireframe from '../components/tulipTasksPortfolio/TulipTasksWireframe'
 
 
 
@@ -185,7 +187,9 @@ const TulipTasks= () => {
                 ]}
             />
 
-    
+            <TulipTasksWireframe />
+
+            <TulipTasksInsights />
 
             
 
