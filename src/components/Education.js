@@ -20,7 +20,7 @@ const Details = ({type, time, place, info}) => {
             >
                 <h3 className='font-bold font-2xl py-2' >{type}</h3>
                 <span className='capitaize font-medium text-dark/75 dark:text-light/50 py-2'>
-                    {time} | {place}
+                    {time}  {place}
                 </span>
                 <p className='font-medium w-full py-2 '>
                     {info}
@@ -60,16 +60,16 @@ const Education = () => {
 
                <Details
                     type={"Bachelor's of Science in Industrial Design"}
-                    time={"2009 - 2013"}
+                    // time={"2009 - 2013"}
                     place={"Wentworth Institute of Technology"}
                     info={"Physical Product Design, User Experience Research, Design Thinking, Model Making, Visual Communication"}
                />
 
                 <Details
-                    type={"Online Coursework"}
-                    time={"2020 - present"}
-                    place={"LearnJavascript.online & The Odin Project"}
-                    info={"HTML, CSS & Javascript Fundamentals"}
+                    type={"JavaScript Certificate"}
+                    time={"2022"}
+                    place={"| LearnJavascript.online"}
+                    info={"Certificate projects: Form Validation, Instant Search, Todo App API, Github API, Currency Conversion API, Food Tracker"}
                />
 
             </ul>
