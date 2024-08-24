@@ -5,21 +5,13 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import portfolioImage from "../../public/images/projects/Portfolio-Edited-01.jpeg"
-import rockPaperScissorsImage from "../../public/images/projects/RockPaperScissors-edited.jpeg"
-import pratumImage from "../../public/images/projects/Pratum-Edited.jpeg"
-import summerReadingImage from "../../public/images/projects/SummerReading-Edited.jpeg"
-import pixelSketchImage from "../../public/images/projects/PixelSketch-1280x720.jpeg"
-import proteusSingleHandAttachmentImage from "../../public/images/projects/proteusSingleHandAttachment.jpeg"
-import TC75MobileImage from "../../public/images/projects/TC75MobileImage.jpeg"
-import TC51HolsterImage from "../../public/images/projects/TC51HolsterImage.jpeg"
-import DeadChannelLogoImage from "../../public/images/projects/DeadChannelLogoImage.jpeg"
-import ResumeBuilderImage from "../../public/images/projects/ResumeBuilder-Edited.jpeg"
-import TulipTasksImage from "../../public/images/projects/TulipTasks.webp"
-import DatsunResourceImage from "../../public/images/projects/DatsunResource-Edited.webp"
-import DiceCapsuleImage from "../../public/images/projects/DiceCapsule-Edited.webp"
+import TulipTasksHeroImage from '../../public/images/tulipTasks/tulipTasks-hero-image-01.webp'
 import TransitionEffect from '@/components/TransitionEffect'
 import { motion } from 'framer-motion'
+import Timeline from '@/components/Timeline'
+import { Shapes } from 'lucide-react'
+
+
 
 const FramerImage = motion(Image)
 
@@ -137,157 +129,66 @@ const MinorIDProject = ({title, type, img, link}) => {
 }
 
 
-
-
-
-
-
 const TulipTasks= () => {
   return (
     <>
     <Head>
-        <title>Mike Charpin Portfolio</title>
+        <title>Tulip Tasks</title>
         <meta name="description" content="Mike Charpin Portfolio" />
     </Head>
     <TransitionEffect/>
     <main className='flex w-full flex-col items-center justify-center'>
         <Layout className='pt-16'>
-            <AnimatedText text={"Web Development"}
+            <AnimatedText text={"Tulip Tasks"}
             classname='mb-16 sm:mb-8 !text-6xl md:!text-5xl sm:!text-3xl'
             />
-                
-                <div className='grid grid-cols-2 gap-16 gap-y-24 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-y-8 
-                '>
-                    <div className='col-span-2'>
-                        <FeaturedProject
-                        title={"Tulip Tasks Prioritization App"}
-                        summary={"A thoughtful React web app designed to help overwhelmed people prioritize thier goals, projects, and tasks."}
-                        link={"https://task-priority.vercel.app/"}
-                        img={TulipTasksImage} 
-                        type={"Featured Project"}
-                        github={"https://github.com/MikeCharpin/taskPriority"}            
-                        />
-                    </div>
-                    <div className='col-span-2'>
-                        <FeaturedProject
-                        title={"Datsun Resource Website"}
-                        summary={"A comprehensive and searchable collection of Datsun Fairlady-Z part diagrams."}
-                        link={"https://datsunresource.online/"}
-                        img={DatsunResourceImage} 
-                        type={"Featured Project"}
-                        github={"https://github.com/MikeCharpin"}            
-                        />
-                    </div>
-                    <div className='col-span-2'>
-                        <FeaturedProject
-                        title={"Personal Portfolio Website"}
-                        summary={"This website you are on right now! Built with React, NextJS, Framer Motion and TailwindCSS"}
-                        link={"https://MichaelCharpin.com"}
-                        img={portfolioImage} 
-                        type={"Featured Project"}
-                        github={"https://github.com/MikeCharpin/nextJS-portfolio"}            
-                        />
-                    </div>
-                    <div className='col-span-2'>
-                        <FeaturedProject
-                        title={"Resume Builder React App"}
-                        summary={"Responsive web app used to build and format a resume. Built with TypeScript, React, Vite, TailwindCSS, and Shadcn/ui"}
-                        link={"https://resume-builder-xoyp.vercel.app/"}
-                        img={ResumeBuilderImage} 
-                        type={"Featured Project"}
-                        github={"https://github.com/MikeCharpin/ResumeBuilder"}            
-                        />
-                    </div>
-                    <div className="col-span-1 md:col-span-2">
-                    <MinorProject
-                        title={"Rock Paper Scissors"}
-                        link={"https://MikeCharpin.github.io/RPS/"}
-                        img={rockPaperScissorsImage} 
-                        type={"Portfolio Website"}
-                        github={"https://github.com/MikeCharpin/RPS"}            
-                        />
-                    </div>
-                    <div className="col-span-1 md:col-span-2">
-                    <MinorProject
-                        title={"Book Tracking"}
-                        link={"https://MikeCharpin.github.io/library-app/"}
-                        img={summerReadingImage} 
-                        type={"Portfolio Website"}
-                        github={"https://github.com/MikeCharpin/library-app"}            
-                        />
-                    </div>
-                    <div className="col-span-1 md:col-span-2">
-                    <MinorProject
-                        title={"Landscaping Company"}
-                        link={"https://MikeCharpin.github.io/Pratum-Landscapes/"}
-                        img={pratumImage} 
-                        type={"Portfolio Website"}
-                        github={"https://github.com/MikeCharpin/Pratum-Landscapes"}            
-                        />
-                    </div>
-                    <div className="col-span-1 md:col-span-2">
-                    <MinorProject
-                        title={"Pixel Art Drawing"}
-                        link={"https://MikeCharpin.github.io/Pixel-Sketch/"}
-                        img={pixelSketchImage} 
-                        type={"Portfolio Website"}
-                        github={"https://github.com/MikeCharpin/Pixel-Sketch"}            
-                        />
-                    </div>
-                    
+             <FramerImage 
+                src={TulipTasksHeroImage} 
+                alt={"Half the image is a messy desk covered in post it notes. The other half of the image is a laptop on a clean desk open to Tulip Tasks."} 
+                className='w-full h-auto rounded-2xl'
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+            />
+            <Timeline
+                timelineTitle={"Project Timeline"}
+                timelineEvents={[
+                    {
+                        month: "October 2023",
+                        title: "Initial UI/UX Design",
+                        description: "Started designing the initial UI and UX for Tulip Tasks.",
+                        icon: <Shapes className="text-primary dark:text-primaryDark" />
+                    },
+                    {
+                        month: "November - December 2023",
+                        title: "Technical Discovery Phase",
+                        description: "Learned React, TypeScript, and determined the tech stack. Conducted user discovery interviews and built a practice React project (Resume Builder) to solidify understanding.",
+                        icon: <Shapes className="text-primary dark:text-primaryDark" />
+                    },
+                    {
+                        month: "January 2024",
+                        title: "Front-End Development",
+                        description: "Began front-end development using React, TailwindCSS, and Shadcn. Continued refining the UI/UX.",
+                        icon: <Shapes className="text-primary dark:text-primaryDark" />
+                    },
+                    {
+                        month: "February 2024",
+                        title: "Back-End Development",
+                        description: "Started building the back-end with Supabase and SQL for live data and authentication.",
+                        icon: <Shapes className="text-primary dark:text-primaryDark" />
+                    },
+                    {
+                        month: "March 2024",
+                        title: "Launch & Feedback",
+                        description: "Launched the app, collected feedback, and fixed bugs.",
+                        icon: <Shapes className="text-primary dark:text-primaryDark" />
+                    }
+                ]}
+            />
 
-                </div>
+    
 
-                <AnimatedText text={"Industrial Design"}
-                    classname='mb-8 mt-16 !text-6xl md:!text-5xl sm:!text-3xl'
-                />
-                 <div className='grid grid-cols-2 gap-16 gap-y-24 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-y-8 '>
-                    <div className='col-span-2'>
-                        <FeaturedIDProject
-                        title={"Fitness Machine Attachment"}
-                        summary={"Single hand attachment for the Proteus system, a fitness machine that incorporates robotics."}
-                        link={"https://www.behance.net/gallery/177955717/Proteus-Single-Hand-Attachment"}
-                        img={proteusSingleHandAttachmentImage} 
-                        type={"Proteus Motion"}            
-                        />
-                    </div>
-                    <div className='col-span-2'>
-                        <FeaturedIDProject
-                        title={"Dead Channel Dice Capsule"}
-                        summary={"The Dice Capsule offers an elegant way to display and transport your favorite dice."}
-                        link={"https://www.behance.net/gallery/178339557/Dead-Channel-Dice-Capsule"}
-                        img={DiceCapsuleImage} 
-                        type={"Dead Channel"}            
-                        />
-                    </div>
+            
 
-                    <div className="col-span-1 md:col-span-2">
-                    <MinorIDProject
-                        title={"Smart Device Accessory"}
-                        link={"https://www.behance.net/gallery/124182657/TC75-Mobile-Dimensioning-Attachment"}
-                        img={TC75MobileImage} 
-                        type={"Zebra Technologies"}          
-                        />
-                    </div>
-
-                    <div className="col-span-1 md:col-span-2">
-                    <MinorIDProject
-                        title={"Smart Device Accessory"}
-                        link={"https://www.behance.net/gallery/124176483/TC51TC56-Holster-for-Zebra-Technologies"}
-                        img={TC51HolsterImage} 
-                        type={"Zebra Technologies"}          
-                        />
-                    </div>
-
-                    <div className="col-span-1 md:col-span-2">
-                    <MinorIDProject
-                        title={"Brand Logo"}
-                        link={"https://www.behance.net/gallery/177960873/Dead-Channel-Logo"}
-                        img={DeadChannelLogoImage} 
-                        type={"Dead Channel"}          
-                        />
-                    </div>
-                </div>
         </Layout>
     </main>
     
