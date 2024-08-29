@@ -18,9 +18,9 @@ const HireMe = () => {
                 bg-dark text-light shadow-md border-2 border-solid border-dark w-20 h-20 rounded-full font-semibold
                 hover:bg-light hover:text-dark
                 dark:border-light
-                md:w-12 md:h-12 md:text-[10px]
+                md:w-12 md:h-12 md:text-[10px] text-center
               '>
-                Hire Me
+                Lets connect
             </Link>
         </div>
         
