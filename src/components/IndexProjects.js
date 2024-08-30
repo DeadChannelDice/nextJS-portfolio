@@ -86,7 +86,7 @@ const IndexProjects = () => {
         classname="pb-4 pt-16 !text-5xl md:!text-4xl sm:!text-3xl"
       />
 
-      <div className="grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-8">
+      <div className="grid grid-cols-2 xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-8">
         <div className="">
           <FeaturedProject
             title={"Tulip Tasks Prioritization App"}

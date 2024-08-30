@@ -36,19 +36,19 @@ const AboutMe = () => {
           text={"About me"}
           classname="pt-16 pb-4 !text-5xl md:!text-4xl sm:!text-3xl"
         />
-        <div className="flex w-full xs:flex-col sm:flex-col md:flex-col gap-8 xs:items-center xs:justify-center md:items-center md:justify-center">
+        <div className="flex w-full xs:flex-col sm:flex-col md:flex-col lg:flex-col gap-8 xs:items-center xs:justify-center md:items-center md:justify-center">
           <Image
             src={profilePic}
             alt="Mike Charpin"
             className="
-                                w-full  lg:w-1/3 xs:w-full sm:w-full md:w-full h-auto rounded-2xl border-2 border-transparent border-solid
+                                w-1/2 lg:w-1/2 mx-auto xs:w-full sm:w-full md:w-full h-auto rounded-2xl border-2 border-transparent border-solid
                                 dark:border-light/90 drop-shadow-xl
                             "
             priority={true}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
 
-          <div className=" flex flex-col gap-4 max-w-[600px] items-center justify-center  text-justify">
+          <div className=" flex flex-col gap-4  items-center justify-center  text-justify">
             <p className="">
               I&apos;m Mike Charpin, a software developer with experience in
               industrial design as a physical product designer. I bring a strong
