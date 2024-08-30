@@ -55,7 +55,7 @@ const TulipTasks = () => {
               "Half the image is a messy desk covered in post it notes. The other half of the image is a laptop on a clean desk open to Tulip Tasks."
             }
             className="w-full h-auto rounded-2xl"
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.01 }}
             transition={{ duration: 0.3 }}
           />
           <AnimatedCaption
@@ -133,8 +133,8 @@ const TulipTasks = () => {
               alt={
                 "Screen grab of wireframing diagrams using Excalidraw in dark mode."
               }
-              className="w-full h-auto rounded-2xl pb-16"
-              whileHover={{ scale: 1.05 }}
+              className="w-full h-auto pb-16"
+              whileHover={{ scale: 1.01 }}
               transition={{ duration: 0.3 }}
             />
           </motion.div>

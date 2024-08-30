@@ -49,10 +49,10 @@ const TulipTasksAppImages = () => {
         <FramerImage
           src={TulipTaskSummary}
           alt={
-            "Half the image is a messy desk covered in post it notes. The other half of the image is a laptop on a clean desk open to Tulip Tasks."
+            "Summary screengrab of the home page for Tulip Task with the 3 main columns for the how about list, goal list, and project, list."
           }
           className="w-full h-auto  pb-16"
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.01 }}
           transition={{ duration: 0.3 }}
         />
       </motion.div>
@@ -76,10 +76,10 @@ const TulipTasksAppImages = () => {
         <FramerImage
           src={TulipTasksPriority}
           alt={
-            "Half the image is a messy desk covered in post it notes. The other half of the image is a laptop on a clean desk open to Tulip Tasks."
+            "Screen grab with arrows and bubbles communicating how the how about list is intended to act as a recommendation list not a list of demands. Another bubble illistrates how the there is a countdown of days remaining until the target date. When the target date has passed by 6 days the count goes negative but at 7 days past the counter dissapears to not guilt the user about passing the target date."
           }
           className="w-full h-auto  pb-16"
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.01 }}
           transition={{ duration: 0.3 }}
         />
       </motion.div>
@@ -101,10 +101,10 @@ const TulipTasksAppImages = () => {
         <FramerImage
           src={TulipTasksImportance}
           alt={
-            "Half the image is a messy desk covered in post it notes. The other half of the image is a laptop on a clean desk open to Tulip Tasks."
+            "Diagram with screen grabs illistrating that the higher a goal or project is on the list the more important it is, increasing the importance scrore."
           }
           className="w-full h-auto  pb-16"
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.01 }}
           transition={{ duration: 0.3 }}
         />
       </motion.div>
@@ -130,10 +130,10 @@ const TulipTasksAppImages = () => {
         <FramerImage
           src={TulipTasksGoals}
           alt={
-            "Half the image is a messy desk covered in post it notes. The other half of the image is a laptop on a clean desk open to Tulip Tasks."
+            "Diagram with screen grabs of the goal creation form illustrating the complexity scale from No problem, a peice of cake to this is going to require some tools to might as well be rocket science and goal color selection menu. "
           }
           className="w-full h-auto  pb-16"
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.01 }}
           transition={{ duration: 0.3 }}
         />
       </motion.div>
@@ -157,10 +157,10 @@ const TulipTasksAppImages = () => {
         <FramerImage
           src={TulipTasksProjects}
           alt={
-            "Half the image is a messy desk covered in post it notes. The other half of the image is a laptop on a clean desk open to Tulip Tasks."
+            "Diagram with screen grabs showing the color coding features and calendar of the project creation form."
           }
           className="w-full h-auto  pb-16"
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.01 }}
           transition={{ duration: 0.3 }}
         />
       </motion.div>
@@ -177,7 +177,7 @@ const TulipTasksAppImages = () => {
         />
         <AnimatedCaption
           text={
-            "Tasks are not included in the calculations since they are intended to be finished quickly."
+            "Diagram with screen grabs showing the task creation form and the time estimate slider."
           }
           classname=" !font-normal !text-xl md:!text-lg sm:!text-md"
         />
@@ -187,7 +187,7 @@ const TulipTasksAppImages = () => {
             "Half the image is a messy desk covered in post it notes. The other half of the image is a laptop on a clean desk open to Tulip Tasks."
           }
           className="w-full h-auto  pb-8"
-          whileHover={{ scale: 1.05 }}
+          whileHover={{ scale: 1.01 }}
           transition={{ duration: 0.3 }}
         />
       </motion.div>

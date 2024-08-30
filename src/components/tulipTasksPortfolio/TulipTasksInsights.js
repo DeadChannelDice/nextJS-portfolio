@@ -33,10 +33,10 @@ const TulipTasksInsights = () => {
       <FramerImage
         src={TulipTasksInterview}
         alt={
-          "Half the image is a messy desk covered in post it notes. The other half of the image is a laptop on a clean desk open to Tulip Tasks."
+          "Screenshot of user interview conducted via video call with shared white board of users process of generating a personal todo list."
         }
         className="w-full h-auto rounded-2xl"
-        whileHover={{ scale: 1.05 }}
+        whileHover={{ scale: 1.01 }}
         transition={{ duration: 0.3 }}
       />
 
