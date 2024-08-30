@@ -41,22 +41,22 @@ const AboutMe = () => {
             src={profilePic}
             alt="Mike Charpin"
             className="
-                                w-full  lg:w-2/3 xs:w-full sm:w-full md:w-full h-auto rounded-2xl border-2 border-transparent border-solid
+                                w-full  lg:w-1/3 xs:w-full sm:w-full md:w-full h-auto rounded-2xl border-2 border-transparent border-solid
                                 dark:border-light/90 drop-shadow-xl
                             "
             priority={true}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
 
-          <div className=" flex flex-col gap-4 max-w-[600px] items-center justify-center  text-justify text-sm">
-            <p className="font-medium">
+          <div className=" flex flex-col gap-4 max-w-[600px] items-center justify-center  text-justify">
+            <p className="">
               I&apos;m Mike Charpin, a software developer with experience in
               industrial design as a physical product designer. I bring a strong
               background in usability-focused design having crafted a diverse
               range of products, from fitness machines and printers to tabletop
               RPG accessories and military helmets.
             </p>
-            <p className="font-medium">
+            <p className="">
               My passion lies in seeing ideas come to life, refining them
               through user feedback, and ultimately making a positive impact on
               people&apos;s lives. I&apos;m known for my resourcefulness,
@@ -64,7 +64,7 @@ const AboutMe = () => {
               My approach to problem-solving is with research, exploration,
               rapid prototyping, and a commitment to user-centered solutions.
             </p>
-            <p className="font-medium">
+            <p className="">
               I aim to be a creative problem solver who delivers results while
               fostering a collaborative working environment. Whether I&apos;m
               working on a website, web app, or physical product, I bring my
