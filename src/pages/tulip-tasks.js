@@ -1,5 +1,4 @@
 import AnimatedText from "@/components/AnimatedText";
-import { GithubIcon } from "@/components/Icons";
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
@@ -132,7 +131,7 @@ const TulipTasks = () => {
             <FramerImage
               src={TulipTasksWireFrame}
               alt={
-                "Half the image is a messy desk covered in post it notes. The other half of the image is a laptop on a clean desk open to Tulip Tasks."
+                "Screen grab of wireframing diagrams using Excalidraw in dark mode."
               }
               className="w-full h-auto rounded-2xl pb-16"
               whileHover={{ scale: 1.05 }}
