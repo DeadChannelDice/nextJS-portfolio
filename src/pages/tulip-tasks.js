@@ -142,7 +142,8 @@ const TulipTasks = () => {
           <TulipTasksAppImages />
           <div className="flex items-center justify-center mt-8">
             <MotionLink
-              href="/"
+              href="https://task-priority.vercel.app/"
+              target="_blank"
               className="
           w-64 h-24 bg-blue-400 text-light flex items-center justify-center rounded-2xl border-4 border-blue-300 shadow-md text-2xl font-bold
         "
