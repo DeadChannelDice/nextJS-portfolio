@@ -24,59 +24,55 @@ import { StickerIcon } from "lucide-react";
 
 const FramerImage = motion(Image);
 
-const FeaturedProject = ({
-  type,
-  title,
-  summary,
-  img,
-  link,
-  github,
-  target,
-}) => {
+const FeaturedProject = ({ title, summary, img, link, github, target }) => {
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl rounded-br-2xl border-2 border-solid border-slate-200 bg-slate-100 dark:bg-zinc-800 dark:border-zinc-900 shadow-xl p-12 relative lg:flex-col lg:p-8 xs:rounded-2xl xs:p-4 ">
-      <Link
-        href={link}
-        target={target}
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full drop-shadow-md"
-      >
-        <FramerImage
-          src={img}
-          alt={title}
-          className="w-full h-auto"
-          priority={true}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.3 }}
-        />
-      </Link>
-      <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
+    <article className="w-full h-full flex flex-col items-center justify-between rounded-3xl  dark:bg-zinc-800 dark:border-zinc-900 shadow-lg p-4">
+      <div>
         <Link
           href={link}
           target={target}
-          className="hover:underline underline-offset-2"
+          className=" w-full cursor-pointer overflow-hidden rounded-xl drop-shadow-md pb-4"
         >
-          <h2 className=" w-full text-left text-4xl font-bold sm:text-xl dark:text-light">
-            {title}
-          </h2>
+          <FramerImage
+            src={img}
+            alt={title}
+            className="w-full h-auto rounded-xl"
+            priority={true}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
+          />
         </Link>
-        <p className="py-2 font-medium text-dark dark:text-light">{summary}</p>
-        <div className="pt-2 flex items-center">
-          <Link
-            href={link}
-            target={target}
-            className="mr-4 rounded-lg border-2 border-solid border-slate-500 hover:bg-primary/90 drop-shadow-md hover:text-light hover:border-primary dark:text-light dark:hover:text-dark  dark:border-light dark:hover:bg-primaryDark/70 dark:hover:border-primaryDark/70 p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base "
-          >
-            Visit Project
-          </Link>
-          <Link
-            href={github}
-            target={target}
-            className="w-10 rounded-full  fill-dark  dark:fill-light"
-          >
-            <GithubIcon />
-          </Link>
+        <div className=" flex flex-col justify-start items-start pt-4">
+          <div>
+            <Link
+              href={link}
+              target={target}
+              className="hover:underline underline-offset-2"
+            >
+              <h2 className=" w-full text-2xl font-bold sm:text-xl md:text-xl dark:text-light">
+                {title}
+              </h2>
+            </Link>
+            <p className="py-2  text-dark dark:text-light">{summary}</p>
+          </div>
         </div>
+      </div>
+      <div className="pt-2 flex items-center justify-start w-full">
+        <Link
+          href={link}
+          target={target}
+          className="mr-4 rounded-lg border-2 border-solid border-slate-500 hover:bg-primary/90 drop-shadow-md hover:text-light hover:border-primary dark:text-light dark:hover:text-dark  dark:border-light dark:hover:bg-primaryDark/70 dark:hover:border-primaryDark/70 p-2 px-6 text-lg font-semibold sm:px-4 sm:text-base "
+        >
+          Visit Project
+        </Link>
+        <Link
+          href={github}
+          target={target}
+          className="w-10 rounded-full  fill-dark  dark:fill-light"
+        >
+          <GithubIcon />
+        </Link>
       </div>
     </article>
   );
@@ -84,17 +80,14 @@ const FeaturedProject = ({
 
 const IndexProjects = () => {
   return (
-    <>
+    <div className="px-4">
       <AnimatedText
         text={"Featured Projects"}
         classname="pb-4 pt-16 !text-5xl md:!text-4xl sm:!text-3xl"
       />
 
-      <div
-        className="grid grid-cols-2 gap-8
-                "
-      >
-        <div className="col-span-2">
+      <div className="grid xs:grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 gap-8">
+        <div className="">
           <FeaturedProject
             title={"Tulip Tasks Prioritization App"}
             summary={
@@ -108,7 +101,7 @@ const IndexProjects = () => {
           />
         </div>
 
-        <div className="col-span-2">
+        <div className="">
           <FeaturedProject
             title={"Personal Portfolio Website"}
             summary={
@@ -120,7 +113,7 @@ const IndexProjects = () => {
             github={"https://github.com/MikeCharpin/nextJS-portfolio"}
           />
         </div>
-        <div className="col-span-2">
+        <div className="">
           <FeaturedProject
             title={"Resume Builder React App"}
             summary={
@@ -133,7 +126,7 @@ const IndexProjects = () => {
             github={"https://github.com/MikeCharpin/ResumeBuilder"}
           />
         </div>
-        <div className="col-span-2">
+        <div className="">
           <FeaturedProject
             title={"Datsun Resource Website"}
             summary={
@@ -155,7 +148,7 @@ const IndexProjects = () => {
           <StickerIcon /> &nbsp; Full projects page
         </Link>
       </div>
-    </>
+    </div>
   );
 };
 
