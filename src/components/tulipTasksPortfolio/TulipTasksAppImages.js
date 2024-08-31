@@ -177,14 +177,14 @@ const TulipTasksAppImages = () => {
         />
         <AnimatedCaption
           text={
-            "Diagram with screen grabs showing the task creation form and the time estimate slider."
+            "Tasks are not currently included in the calculations since they influence the micro scale as opposed to the macro scale of goals and projects."
           }
           classname=" !font-normal !text-xl md:!text-lg sm:!text-md"
         />
         <FramerImage
           src={TulipTasksTasks}
           alt={
-            "Half the image is a messy desk covered in post it notes. The other half of the image is a laptop on a clean desk open to Tulip Tasks."
+            "Diagram with screen grabs showing the task creation form and the time estimate slider."
           }
           className="w-full h-auto  pb-8"
           whileHover={{ scale: 1.01 }}
