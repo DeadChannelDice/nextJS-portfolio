@@ -1,5 +1,5 @@
 import React from "react";
-import { CircularTextSoftware, VisitTulipTasksCircle } from "../Icons";
+import { VisitTulipTasksCircle } from "../Icons";
 import Link from "next/link";
 
 const VisitTulipTasksLink = () => {
@@ -16,7 +16,8 @@ const VisitTulipTasksLink = () => {
         />
 
         <Link
-          href="mailto:Michael.Charpin@gmail.com"
+          href="https://task-priority.vercel.app/"
+          target="_blank"
           className="
                 flex items-center justify-center
                 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
