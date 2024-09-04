@@ -10,7 +10,7 @@ const VisitTulipTasksLink = () => {
     md:right-8 md:left-auto md:top-0 md:bottom-auto md:absolute
     "
     >
-      <div className="w-48 h-auto flex items-center justify-center relative md:w-24">
+      <div className="w-40 h-auto flex items-center justify-center relative md:w-24">
         <VisitTulipTasksCircle
           className={"fill-dark animate-reverse-spin dark:fill-light"}
         />
